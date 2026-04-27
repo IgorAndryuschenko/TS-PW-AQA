@@ -1,0 +1,7 @@
+{
+  "chatgpt.commentCodeLensEnabled": true,
+  "chatgpt.openOnStartup": true,
+  "chatgpt.runCodexInWindowsSubsystemForLinux": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}

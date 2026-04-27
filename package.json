@@ -4,13 +4,15 @@
   "description": "��#\u0000 \u0000T\u0000S\u0000-\u0000P\u0000W\u0000-\u0000A\u0000Q\u0000A\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-  "test": "playwright test",
-  "test:ui": "playwright test --ui",
-  "test:headed": "playwright test --headed",
-  "report": "playwright show-report",
-  "lint": "eslint .",
-  "lint:fix": "eslint . --fix"
-},
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IgorAndryuschenko/TS-PW-AQA.git"
@@ -31,6 +33,7 @@
     "eslint-plugin-playwright": "^2.10.2",
     "globals": "^17.5.0",
     "jiti": "^2.6.1",
+    "prettier": "^3.8.3",
     "typescript-eslint": "^8.59.0"
   }
 }
