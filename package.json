@@ -1,23 +1,33 @@
 {
   "name": "ts-pw-aqa",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000T\u0000S\u0000-\u0000P\u0000W\u0000-\u0000A\u0000Q\u0000A\u0000\r\u0000 \u0000",
+  "description": "Playwright + TypeScript template for UI autotests",
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
+    "test:ci": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
     "test:ui": "playwright test --ui",
     "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
     "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier . --write",
-    "format:check": "prettier . --check"
+    "format": "prettier \"**/*.{ts,mts,json,md,yml,yaml}\" --write",
+    "format:check": "prettier \"**/*.{ts,mts,json,md,yml,yaml}\" --check",
+    "codegen": "playwright codegen"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IgorAndryuschenko/TS-PW-AQA.git"
   },
-  "keywords": [],
+  "keywords": [
+    "playwright",
+    "typescript",
+    "e2e",
+    "aqa"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
