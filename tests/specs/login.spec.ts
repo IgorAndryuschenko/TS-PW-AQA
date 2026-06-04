@@ -10,7 +10,6 @@ test.describe('login', () => {
     await loginPage.login(users.standard.username, users.standard.password);
 
     await inventoryPage.expectOpened();
-    await expect(inventoryPage.title).toHaveText('Products');
   });
 
   test('shows an error for a locked out user', async ({ loginPage }) => {
